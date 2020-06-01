@@ -6,85 +6,110 @@
 
 		<title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/custom_white.css" id="theme">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<img class="plain" src="slides/cover.png"> </section>
+					<img class="plain" src="slides/cover.svg" width="100%">
+				</section>
 
 				<section data-background-image="slides/files/background.png">
-					<h2> What do we need for open science ?</h2>
-					<p align="left" style="padding-left: 690px;"> <img class="plain" width="120" src="slides/files/docker.png">
-					<span align="left" style="padding-left: 90px;"> Reproducibility </span> </p>
-					<p align="left" style="padding-left: 700px;" class="fragment fade-in"> <img class="plain" width="100" src="slides/files/github.png">
-					<span align="left" style="padding-left: 100px;"> Open source </span> </p>
-					<p align="left" style="padding-left: 700px;" class="fragment fade-in"> <img class="plain" width="100" src="slides/files/binderhub.png"> 
-					<span align="left" style="padding-left: 100px;"> Easy access with interactivity </span> </p>
-					<p align="left" style="padding-left: 700px;" class="fragment fade-in"> <img class="plain" width="100" src="slides/files/reviewnb.png">
-					<span align="left" style="padding-left: 100px;"> Peer reviewed </span> </p> </section>
+					<h3> What is needed for open science ?</h3>
+					<p align="left" style="padding-left: 40%;" class="fragment fade-in"> 
+						<img class="plain" width="10%" src="slides/files/docker.png">
+						<span align="left" style="padding-left: 5%;"> Reproducibility </span>
+					</p>
+					<p align="left" style="padding-left: 40%;" class="fragment fade-in">
+						<img class="plain" width="10%" src="slides/files/github.png">
+						<span align="left" style="padding-left: 5%;"> Open source </span>
+					</p>
+					<p align="left" style="padding-left: 40%;" class="fragment fade-in">
+						<img class="plain" width="10%" src="slides/files/binderhub.png"> 
+						<span align="left" style="padding-left: 5%;"> Easy access with interactivity </span>
+					</p>
+					<p align="left" style="padding-left: 40%;" class="fragment fade-in">
+						<img class="plain" width="10%" src="slides/files/reviewnb.png">
+						<span align="left" style="padding-left: 5%;"> Peer reviewed </span>
+					</p>
+				</section>
+				
 
 				<section data-background-image="slides/files/background.png">
-					<iframe width="1500" height="800" data-src="slides/alzheimer.pdf" data-preload> </iframe> </section>
+					<h3> The past of science</h3>
+					<iframe width="70%" height="800" data-src="slides/alzheimer.pdf" data-preload> </iframe>
+				</section>
 
-				<section data-background-image="slides/files/background.png">
-					<iframe width="1500" height="800"  data-src="slides/future.html" data-preload> </iframe> </section>
+				<section data-background-image="slides/files/background.png" data-preload>
+					<h3> The future of science</h3>
+					<iframe width="70%" height="800" data-src="slides/nilearn.html" data-preload> </iframe>
+				</section>
 
 				<section data-background-image="slides/files/background.png"> 
-					<img class="plain" src="slides/description.png"> </section>
-
-			        <section data-background-image="slides/files/background.png">
-					<iframe width="1500" height="800" data-src="slides/nilearn.html" data-preload> </iframe> </section>
+					<img class="plain" width="70%" src="slides/description.svg">
+				</section>
 
 				<section data-background-image="slides/files/background.png">
-					<h2> What can you do with neurolibre ?</h2>
-					<p align="left"> <img class="plain" width="600" src="slides/files/juice.png">
-					<span style="padding-left: 50px;" class="fragment fade-in" data-fragment-index="2"> <img class="plain" width="600" src="slides/files/teach.png"> </span>
-					<span style="padding-left: 50px;" class="fragment fade-in" data-fragment-index="3"> <img class="plain" width="600" src="slides/files/enjoy_research.png"> </span> </p> 
-					<p align="left"> <img class="plain" width="600" src="slides/files/alzheimer_title.png">
-					<span style="padding-left: 50px;" class="fragment fade-in" data-fragment-index="2"> <img class="plain" width="600" src="slides/files/nilearn_title.png"> </span>
-					<span style="padding-left: 50px;" class="fragment fade-in" data-fragment-index="3"> <img class="plain" width="600" src="slides/files/sct_title.png"> </span>
-					<p align="left" style="padding-left: 650px;" class="fragment fade-in" data-fragment-index="2"> <img class="plain" width="600" src="slides/files/quantitative_mri_title.png"> </p> </section>
+					<h3> What can you do with neurolibre ?</h3>
+					<p1> 
+						<img style="padding-right: 5%;" class="plain" width="30%" src="slides/files/enjoy_research.png">
+						<span class="fragment fade-in" data-fragment-index="1"> <img style="padding-left: 5%;" class="plain" width="30%" src="slides/files/teach.png"> </span>
+					</p>
+					<p1>
+						<img style="padding-right: 5%;" class="plain" width="30%" src="slides/files/alzheimer_title.png">
+						<span class="fragment fade-in" data-fragment-index="1"> <img style="padding-left: 5%;" class="plain" width="30%" src="slides/files/nilearn_title.png"> </span>
+					</p>
+					<p1>
+						<img style="padding-right: 5%;" class="plain" width="30%" src="slides/files/sct_title.png">
+						 <span class="fragment fade-in" data-fragment-index="1"> <img style="padding-left: 5%;" class="plain" width="30%" src="slides/files/quantitative_mri_title.png"> </span> 
+					</p>
+				</section>
+
+				<section data-background-image="slides/files/background.png">
+					<h3> Publication workflow </h3>
+						<img class="plain" width="30%" src="slides/workflow.svg">
+					<span class="fragment fade-in"> 
+						<video data-autoplay width=60% data-src="slides/files/submission.mp4" data-preload> </video>
+					</span>
+				</section>
+
+				<section data-background-image="slides/files/background.png">
+					<h3> Front-end : Jupyter Books </h3>
+						<iframe width="70%" height="800" data-src="slides/signal_modelling.html" data-preload> </iframe>
+				</section>
 
 				<section data-background-image="slides/files/background.png"> 
-					<h2> How are we doing that ? </h2> 					
-					<img class="plain" width="1400" src="slides/how.png"> </section>
+					<h3> Back-end : Binderhub </h3> 					
+					<img class="plain" width="50%" src="slides/how.png">
+				</section>
 
-				<section data-background-image="slides/files/background.png">
-					<h2> What's next? </h2> 
-					<ul style="list-style-type:disc;">
-						<span align="left" style="padding-left: 300px;" class="fragment fade-in"> <li>Create a submission and peer-reviewed system</li> </span>
-						<span align="left" style="padding-left: 300px;" class="fragment fade-in"> <li>Partner with Aperture? Other journals?</li> </span>
-						<span align="left" style="padding-left: 300px;" class="fragment fade-in"> <li>Access CONP data directly through NeuroLibre</li> </span>
-						<span align="left" style="padding-left: 300px;" class="fragment fade-in"> <li>Create a private, uncurated cloud for authentificated CONP members</li> </span> </section>
-				<section>
-					<img class="plain" src="slides/powered.png"> </section>
+				<section data-background-image="slides/files/background.png"> 
+					<h3> Partners </h3> 					
+					<img class="plain" width="40%" src="slides/partners.svg">
+				</section>
+				
+				<section data-background-image="slides/powered.svg"> </section>
 				
 			</div>
 		</div>
 
-		<script src="js/reveal.js"> </script>
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
 
 		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
 			Reveal.initialize({
+				hash: true,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
@@ -97,9 +122,11 @@
 				minScale: 0.9,
 				maxScale: 0.9,
 				controlsLayout: 'edges',
-				hash: true,
-				viewDistance: 2,
-				slideNumber: 'c/t'
+				viewDistance: 20,
+				slideNumber: 'c/t',
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
 	</body>
